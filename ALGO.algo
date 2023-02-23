@@ -9,6 +9,7 @@ BEGIN
     length_counter:=0
     numVOY_counter:=0
     word_counter:=0
+    write("the sentence")
     WHILE (CHAR<>'.') DO
         read (CHAR)
         length_counter +=1;
