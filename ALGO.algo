@@ -1,0 +1,24 @@
+ALGORITHM read a sentence
+VAR
+    ph : CHAR;
+    length : INTEGER; //length of the sentence//
+    word : INTEGER; //the  number of words in the sentence//
+    numVOW : INTEGER; //numVOW is the number of the vowels in the sentence//
+    
+BEGIN
+    length_counter:=0
+    numVOY_counter:=0
+    word_counter:=0
+    WHILE (CHAR<>'.') DO
+        read (CHAR)
+        length_counter +=1;
+    IF ((CHAR='a') or (CHAR='e') or (CHAR='i') or (CHAR='o') or (CHAR='u') or (CHAR='A') or (CHAR=''E) or (CHAR='I') or (CHAR='O') OR (CHAR='U')) THEN
+        numVOY_counter +=1
+    END_IF
+    IF (CHAR ==".") THEN
+        word_counter +=1
+    END_IF
+    END_WHILE
+    
+BREAK
+END
